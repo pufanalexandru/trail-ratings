@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CriteriaComponent } from './components/criteria/criteria.component';
 import { ResultComponent } from './components/result/result.component';
 import { UnitPipe } from './pipes/unit.pipe';
+import { MeasurmentSystemService } from './services/measurment-system.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { UnitPipe } from './pipes/unit.pipe';
     CollapseModule.forRoot(),
     DropdownModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    MeasurmentSystemService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
