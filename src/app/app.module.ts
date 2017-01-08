@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CriteriaComponent } from './components/criteria/criteria.component';
 import { ResultComponent } from './components/result/result.component';
+import { UnitPipe } from './pipes/unit.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CriteriaComponent,
-    ResultComponent
+    ResultComponent,
+    UnitPipe
   ],
   imports: [
     BrowserModule,
