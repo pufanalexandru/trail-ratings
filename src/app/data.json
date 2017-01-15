@@ -1,0 +1,29 @@
+{
+  "trail-width": {
+    "white circle": {
+      "id": 1,
+      "min": 72,
+      "max": null
+    },
+    "green circle": {
+      "id": 2,
+      "min": 36,
+      "max": 72
+    },
+    "blue square": {
+      "id": 3,
+      "min": 24,
+      "max": 36
+    },
+    "black diamond": {
+      "id": 4,
+      "min": 12,
+      "max": 24
+    },
+    "double black diamond": {
+      "id": 5,
+      "min": 6,
+      "max": 24
+    }
+  }
+}
