@@ -7,6 +7,7 @@ export class MeasurmentSystemService {
 
   constructor() {
     this.system.type = localStorage['system'] ? localStorage['system'] : 'metric';
+    this.system.notation = this.system.type == 'metric' ? 'm' : '"';
   }
 
   getSystem() {
@@ -15,6 +16,7 @@ export class MeasurmentSystemService {
 
   setSystem(type: string) {
     this.system.type = type;
+    this.system.notation = type == 'metric' ? 'm' : '"';
   }
 
 }
