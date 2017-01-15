@@ -11,6 +11,7 @@ import { CriteriaComponent } from './components/criteria/criteria.component';
 import { ResultComponent } from './components/result/result.component';
 import { UnitPipe } from './pipes/unit.pipe';
 import { MeasurmentSystemService } from './services/measurment-system.service';
+import { TrailWidthOptionComponent } from './components/criteria/trail-width-option/trail-width-option.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MeasurmentSystemService } from './services/measurment-system.service';
     HeaderComponent,
     CriteriaComponent,
     ResultComponent,
-    UnitPipe
+    UnitPipe,
+    TrailWidthOptionComponent
   ],
   imports: [
     BrowserModule,
