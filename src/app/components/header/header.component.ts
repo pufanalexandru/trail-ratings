@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit {
 
   changeSystem(newSystem: string) {
     this.systemService.setSystem(newSystem);
+    localStorage['system'] = newSystem;
   }
 
 }
