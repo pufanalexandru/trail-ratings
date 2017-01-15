@@ -8,7 +8,8 @@ import { MeasurmentSystemService } from '../../../services/measurment-system.ser
 })
 export class TrailWidthOptionComponent implements OnInit {
 
-  @Input() width: number;
+  @Input() min: number;
+  @Input() max: number;
   private system: any;
 
   constructor(private systemService: MeasurmentSystemService) { }
