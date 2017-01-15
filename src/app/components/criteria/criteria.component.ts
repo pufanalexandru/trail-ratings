@@ -17,7 +17,6 @@ export class CriteriaComponent implements OnInit {
   }
 
   selectWidth(id) {
-    console.log(id);
     this.selectedWidth = id;
   }
 
