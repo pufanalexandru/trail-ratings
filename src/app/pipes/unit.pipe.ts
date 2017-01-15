@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class UnitPipe implements PipeTransform {
 
   transform(value: number, system: string): number {
-    if (system == 'imperial') {
-      return value * 39.3700787;
+    if (system == 'metric') {
+      return value / 39.3700787;
     }
 
     return value;
