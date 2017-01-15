@@ -12,6 +12,7 @@ import { ResultComponent } from './components/result/result.component';
 import { UnitPipe } from './pipes/unit.pipe';
 import { MeasurmentSystemService } from './services/measurment-system.service';
 import { TrailWidthOptionComponent } from './components/criteria/trail-width-option/trail-width-option.component';
+import { CenteredDirective } from './directives/centered.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TrailWidthOptionComponent } from './components/criteria/trail-width-opt
     CriteriaComponent,
     ResultComponent,
     UnitPipe,
-    TrailWidthOptionComponent
+    TrailWidthOptionComponent,
+    CenteredDirective
   ],
   imports: [
     BrowserModule,
