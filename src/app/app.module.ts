@@ -14,6 +14,7 @@ import { MeasurmentSystemService } from './services/measurment-system.service';
 import { DataService } from './services/data.service';
 import { TrailWidthOptionComponent } from './components/criteria/trail-width-option/trail-width-option.component';
 import { CenteredDirective } from './directives/centered.directive';
+import { TreadSurfaceOptionsComponent } from './components/criteria/tread-surface-options/tread-surface-options.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CenteredDirective } from './directives/centered.directive';
     ResultComponent,
     UnitPipe,
     TrailWidthOptionComponent,
-    CenteredDirective
+    CenteredDirective,
+    TreadSurfaceOptionsComponent
   ],
   imports: [
     BrowserModule,
