@@ -8,12 +8,15 @@ import { DataService } from '../../services/data.service';
 export class CriteriaComponent implements OnInit {
 
   private widths: any[];
+  private surfaces: any[];
+
   private selectedWidth: number;
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
     this.widths = this.data.getWidths();
+    this.surfaces = this.data.getSurfaces();
   }
 
   selectWidth(id) {

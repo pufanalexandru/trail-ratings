@@ -25,5 +25,27 @@
       "min": 6,
       "max": 24
     }
+  ],
+  "tread-surface": [
+    {
+      "id": 1,
+      "description": "Hardened or surfaced"
+    },
+    {
+      "id": 2,
+      "description": "Firm and stable"
+    },
+    {
+      "id": 3,
+      "description": "Mostly stable with some variability"
+    },
+    {
+      "id": 4,
+      "description": "Widely variable"
+    },
+    {
+      "id": 5,
+      "description": "Widely variable and unpredictable"
+    }
   ]
 }

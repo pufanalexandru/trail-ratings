@@ -7,6 +7,10 @@ export class DataService {
 
   private data: any = model;
 
+  public getSurfaces(): any[] {
+    return this.data['tread-surface'];
+  }
+
   public getWidths(): any[] {
     return this.data['trail-width'];
   }
