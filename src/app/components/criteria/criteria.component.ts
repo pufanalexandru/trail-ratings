@@ -11,6 +11,7 @@ export class CriteriaComponent implements OnInit {
   private surfaces: any[];
 
   private selectedWidth: number;
+  private selectedSurface: number;
 
   constructor(private data: DataService) { }
 
@@ -21,6 +22,10 @@ export class CriteriaComponent implements OnInit {
 
   selectWidth(id) {
     this.selectedWidth = id;
+  }
+
+  selectSurface(id) {
+    this.selectedSurface = id;
   }
 
 }

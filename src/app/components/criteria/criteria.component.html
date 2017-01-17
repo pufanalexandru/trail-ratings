@@ -14,7 +14,11 @@
   <div class="row">
     <div class="col-md-2"><h2>Tread Surface</h2></div>
     <div class="col-md-2" *ngFor="let surface of surfaces">
-      <tread-surface-option [description]="surface.description"></tread-surface-option>
+      <tread-surface-option 
+        [description]="surface.description" 
+        (click)="selectSurface(surface.id)"
+        [class.selected]="selectedSurface == surface.id"
+        ></tread-surface-option>
     </div>
   </div>
   
