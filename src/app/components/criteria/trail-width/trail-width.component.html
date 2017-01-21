@@ -1,0 +1,11 @@
+<p>Trail Width</p>
+<div class="radio" *ngFor="let width of widths" (change)="selectWidth(width.id)">
+  <label>
+    <input type="radio" name="trail-width">
+    <span *ngIf="width.max">
+      between {{width.min | unit: system.type | number: '1.0-2' }}{{system.notation}} and {{width.max | unit: system.type | number: '1.0-2' }}{{system.notation}}</span>
+    <span *ngIf="!width.max">
+      more than {{width.min | unit: system.type | number: '1.0-2' }}{{system.notation}}
+    </span>
+  </label>
+</div>

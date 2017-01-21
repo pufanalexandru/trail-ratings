@@ -1,26 +1,4 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2"><h2>Trail Width</h2></div>
-    <div class="col-md-2" *ngFor="let width of widths">
-      <trail-width-option 
-        [min]="width.min" 
-        [max]="width.max" 
-        (click)="selectWidth(width.id)"
-        [class.selected]="selectedWidth == width.id"
-      ></trail-width-option>
-    </div>
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-2"><h2>Tread Surface</h2></div>
-    <div class="col-md-2" *ngFor="let surface of surfaces">
-      <tread-surface-option 
-        [description]="surface.description" 
-        (click)="selectSurface(surface.id)"
-        [class.selected]="selectedSurface == surface.id"
-        ></tread-surface-option>
-    </div>
-  </div>
-  
-  
+  <trail-width [widths]="widths" (selectedWidth)="selectWidth($event)"></trail-width>
+  <tread-surface [surfaces]="surfaces" (selectedSurface)="selectSurface($event)"></tread-surface>  
 </div>

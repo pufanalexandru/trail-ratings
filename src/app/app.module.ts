@@ -12,9 +12,9 @@ import { ResultComponent } from './components/result/result.component';
 import { UnitPipe } from './pipes/unit.pipe';
 import { MeasurmentSystemService } from './services/measurment-system.service';
 import { DataService } from './services/data.service';
-import { TrailWidthOptionComponent } from './components/criteria/trail-width-option/trail-width-option.component';
+import { TrailWidthComponent } from './components/criteria/trail-width/trail-width.component';
 import { CenteredDirective } from './directives/centered.directive';
-import { TreadSurfaceOptionComponent } from './components/criteria/tread-surface-options/tread-surface-option.component';
+import { TreadSurfaceComponent } from './components/criteria/tread-surface/tread-surface.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +23,9 @@ import { TreadSurfaceOptionComponent } from './components/criteria/tread-surface
     CriteriaComponent,
     ResultComponent,
     UnitPipe,
-    TrailWidthOptionComponent,
+    TrailWidthComponent,
     CenteredDirective,
-    TreadSurfaceOptionComponent
+    TreadSurfaceComponent
   ],
   imports: [
     BrowserModule,

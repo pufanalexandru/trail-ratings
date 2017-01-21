@@ -1,0 +1,7 @@
+<p>Tread Surface</p>
+<div class="radio" *ngFor="let surface of surfaces" (change)="selectSurface(surface.id)">
+  <label>
+    <input type="radio" name="trail-surface">
+    {{surface.description}}
+  </label>
+</div>
